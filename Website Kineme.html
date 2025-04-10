@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visacool Food's Delivery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="https://i.pinimg.com/236x/f8/2b/32/f82b32e33e68eef6f619584d39455b30.jpg" alt="Visacool Logo" class="logo" />
+    <input type="text" class="search-bar" placeholder="Search for food..." aria-label="Search for food" />
+    <button class="search-btn" aria-label="Search">🔍</button>
+    <div class="user-icon" aria-label="User Profile">👤</div>
+    <div class="menu-toggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <nav>
+    <a href="#categories">Categories</a>
+    <a href="#best-selling">Best Selling</a>
+    <a href="#about-us">About</a>
+    <a href="#why-choose">Why Us</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Categories -->
+<div class="container">
+  <section id="categories" class="categories">
+    <h2 class="section-title">Categories</h2>
+    <div class="category-list">
+      <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Chicken">
+        <p>Chicken</p>
+      </div>
+      <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Fries">
+        <p>Fries</p>
+      </div>
+      <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png" alt="Grilled">
+        <p>Grilled</p>
+      </div>
+      <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Drinks">
+        <p>Drinks</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Best Selling -->
+<div class="container">
+  <section id="best-selling" class="best-selling">
+    <h2 class="section-title">🔥 Best Selling</h2>
+    <div class="product-list">
+      <div class="product-card" onclick="openPopup('Jollibee Chickenjoy', '₱145', 'https://images.yummy.ph/yummy/uploads/2018/10/Jollibee-Chickenjoy-2018-1.jpg')">
+        <img src="https://images.yummy.ph/yummy/uploads/2018/10/Jollibee-Chickenjoy-2018-1.jpg" alt="Jollibee Chickenjoy" />
+        <h3>Jollibee Chickenjoy</h3>
+        <p>₱145 - Crispy, juicy, and tender Chickenjoy!</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" onclick="openPopup('McDonald\'s Fries', '₱89', 'https://thecozycook.com/wp-content/uploads/2020/02/Copycat-McDonalds-French-Fries--690x920.jpg')">
+        <img src="https://thecozycook.com/wp-content/uploads/2020/02/Copycat-McDonalds-French-Fries--690x920.jpg" alt="McDonald's Fries" />
+        <h3>McDonald's Fries</h3>
+        <p>₱89 - World-famous golden crispy fries!</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" onclick="openPopup('Mang Inasal Chicken', '₱199', 'https://asianinspirations.com.au/wp-content/uploads/2022/07/R02993-Chicken-Inasal-(Filipino-style-Grilled-Chicken)-619x412.jpg')">
+        <img src="https://asianinspirations.com.au/wp-content/uploads/2022/07/R02993-Chicken-Inasal-(Filipino-style-Grilled-Chicken)-619x412.jpg" alt="Mang Inasal Chicken" />
+        <h3>Mang Inasal Chicken</h3>
+        <p>₱199 - Smoky, grilled chicken with unlimited rice!</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- About Us -->
+<div class="container">
+  <section id="about-us" class="about-us">
+    <h2 class="section-title">About Us</h2>
+    <p>Visacool Food's Delivery is a service built on quality, speed, and affordability. We aim to bring your favorite meals straight to your door with the comfort and safety you deserve.</p>
+  </section>
+</div>
+
+<!-- Why Choose Us -->
+<div class="container">
+  <section id="why-choose" class="why-choose">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <ul>
+      <li>Fast and Reliable Delivery</li>
+      <li>Top-rated Partner Restaurants</li>
+      <li>Secure Online Payments</li>
+      <li>Friendly Customer Support</li>
+    </ul>
+  </section>
+</div>
+
+<!-- Testimonials -->
+<div class="container">
+  <section id="testimonials" class="testimonials">
+    <h2 class="section-title">What Customers Say</h2>
+    <div class="testimonial">
+      <p>"Delivered fresh and fast. Highly recommended!" - Carla M.</p>
+    </div>
+    <div class="testimonial">
+      <p>"Easy to order and delicious food every time!" - John T.</p>
+    </div>
+  </section>
+</div>
+
+<!-- Contact Info -->
+<div class="container">
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Email: <a href="mailto:support@visacoolfoods.com">support@visacoolfoods.com</a></p>
+    <p>Phone: <a href="tel:+639123456789">+63 912 345 6789</a></p>
+    <p>Location: Manila, Philippines</p>
+  </section>
+</div>
+
+<!-- Follow Us -->
+<div class="container">
+  <section class="follow-us">
+    <h2 class="section-title">Follow Us</h2>
+    <a href="https://www.facebook.com/profile.php?id=61574084242977" target="_blank" class="fb-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" />
+      Visit our Facebook Page
+    </a>
+  </section>
+</div>
+
+<!-- Popup Modal -->
+<div id="orderPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img id="popupImage" src="" alt="Food Image" />
+    <h3 id="popupTitle"></h3>
+    <p id="popupPrice"></p>
+    <label for="quantity">Quantity: </label>
+    <input type="number" id="quantity" value="1" min="1" />
+    <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  &copy; 2025 Visacool Food's Delivery. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
